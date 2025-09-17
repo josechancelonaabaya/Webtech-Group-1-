@@ -17,6 +17,43 @@
 
 html { scroll-behavior: smooth; }
 
+/* ---------------- CSS-Only Mobile Navigation Components ---------------- */
+/* Hide the checkbox input */
+.nav-toggle {
+  display: none;
+}
+
+/* Hamburger menu button styling (initially hidden on desktop) */
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #1a6e00;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.nav-toggle-label:hover {
+  background-color: rgba(26, 110, 0, 0.1);
+}
+
+/* Screen reader text for accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ---------------- Navigation (scoped) ---------------- */
 .main-nav {
   background: #fff;
@@ -244,7 +281,7 @@ html { scroll-behavior: smooth; }
 .accordion details[open] { box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
 .accordion summary { cursor: pointer; padding: 1rem 1.1rem; list-style: none; position: relative; font-weight: 600; }
 .accordion summary::marker, .accordion summary::-webkit-details-marker { display: none; }
-.accordion summary::after { content: "▾"; position: absolute; right: 1rem; transform: rotate(-90deg); transition: transform .18s ease; }
+.accordion summary::after { content: "\25BE"; position: absolute; right: 1rem; transform: rotate(-90deg); transition: transform .18s ease; }
 .accordion details[open] summary::after { transform: rotate(0deg); }
 .accordion-body { padding: 0 1.1rem 1rem; color: #475569; line-height: 1.7; }
 
@@ -308,8 +345,13 @@ html { scroll-behavior: smooth; }
   .legal { text-align: left; margin-top: .5rem; }
 }
 
-/* ---------------- Enhanced Mobile Responsive Fixes ---------------- */
+/* ============================================================================
+   ADDED CODE: ENHANCED MOBILE RESPONSIVE DESIGN WITH CSS-ONLY NAVIGATION
+   Added comprehensive mobile responsiveness with proper breakpoints,
+   touch optimization, and accessibility improvements
+============================================================================ */
 
+/* Base responsive improvements */
 img {
   max-width: 100%;
   height: auto;
@@ -363,37 +405,86 @@ img {
 
 /* ---------------- Mobile and Small Tablet (max-width: 768px) ---------------- */
 @media (max-width: 768px) {
-  /* Navigation fixes */
+  /* CSS-Only Mobile Navigation */
   .main-nav {
     padding: 1rem 1.5rem;
     flex-wrap: wrap;
+    position: relative;
   }
   
+  /* Show hamburger button on mobile */
+  .nav-toggle-label {
+    display: block;
+    order: 3;
+  }
+  
+  /* Default hamburger icon */
+  .nav-toggle-label::before {
+    content: '☰';
+  }
+  
+  /* Change hamburger to X when menu is open */
+  .nav-toggle:checked + .nav-toggle-label::before {
+    content: '✕';
+  }
+  
+  /* Focus styles for keyboard navigation */
+  .nav-toggle:focus + .nav-toggle-label {
+    outline: 2px solid #1a6e00;
+    outline-offset: 2px;
+  }
+  
+  /* Mobile menu styling - initially hidden */
   .main-nav ul {
-    display: none;
-    width: 100%;
-    flex-direction: column;
     position: absolute;
     top: 100%;
     left: 0;
+    width: 100%;
     background: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    padding: 1rem 0;
+    border-top: 1px solid rgba(26, 110, 0, 0.1);
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    
+    /* Hidden by default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
   }
   
-  .main-nav.active ul {
+  /* Show menu when checkbox is checked */
+  .nav-toggle:checked ~ ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    max-height: 400px;
     display: flex;
   }
   
   .main-nav li {
-    margin: 0.5rem 1rem;
+    margin: 0;
+    text-align: center;
   }
   
-  .main-nav::after {
-    content: "\2630";
-    font-size: 1.5rem;
-    cursor: pointer;
+  .main-nav a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+  }
+  
+  .main-nav a:hover {
+    background-color: rgba(26, 110, 0, 0.05);
     color: #1a6e00;
+  }
+  
+  /* Last item styling */
+  .main-nav li:last-child a {
+    border-bottom: none;
   }
   
   /* Intro section */
@@ -632,6 +723,10 @@ img {
   
   .main-nav h3 {
     font-size: 1.2rem;
+  }
+  
+  .nav-toggle-label {
+    font-size: 1.3rem;
   }
   
   /* Intro */
@@ -895,3 +990,7 @@ img {
     box-shadow: none;
   }
 }
+
+/* ============================================================================
+   END OF ADDED RESPONSIVE CODE
+============================================================================ */
