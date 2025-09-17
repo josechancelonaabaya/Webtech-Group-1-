@@ -345,13 +345,6 @@ html { scroll-behavior: smooth; }
   .legal { text-align: left; margin-top: .5rem; }
 }
 
-/* ============================================================================
-   ADDED CODE: ENHANCED MOBILE RESPONSIVE DESIGN WITH CSS-ONLY NAVIGATION
-   Added comprehensive mobile responsiveness with proper breakpoints,
-   touch optimization, and accessibility improvements
-============================================================================ */
-
-/* Base responsive improvements */
 img {
   max-width: 100%;
   height: auto;
@@ -991,6 +984,3 @@ img {
   }
 }
 
-/* ============================================================================
-   END OF ADDED RESPONSIVE CODE
-============================================================================ */
