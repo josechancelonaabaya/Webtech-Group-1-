@@ -7,166 +7,418 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <h3>Klima</h3>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#statistics">Statistics</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#advocacy">Relevant Advocacy Groups</a></li>
-            <li><a href="#opinions">Opinions</a></li>
-            <li><a href="#trends">Trends and Innovations</a></li>
-        </ul>
-    </nav>
+<!-- Navigation -->
+<nav class="main-nav">
+    <h3>Klima</h3>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#statistics">Statistics</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#advocacy">Relevant Advocacy Groups</a></li>
+        <li><a href="#opinions">Opinions</a></li>
+        <li><a href="#trends">Trends and Innovations</a></li>
+    </ul>
+</nav>
 
-    <div class="intro">
-        <h1>Klima</h1>
-        <h4>Understanding Climate Change, Pollution, and Environmental Solutions</h4>
+<div class="intro">
+    <h1>Klima</h1>
+    <h4>Understanding Climate Change, Pollution, and Environmental Solutions</h4>
+</div>
+<section id="home">
+    <div class="climate">
+        <div class="climate-text">
+            <h2>What is Climate Change?</h2>
+            <p>
+                Climate change refers to long-term shifts in temperatures and weather
+                patterns. Such shifts can be natural, due to changes in the sun's activity
+                or large volcanic eruptions.
+            </p>
+        </div>
+
+        <div class="climate-text2">
+            <img src="resources/climate-change.jpg" alt="Climate change illustration" />
+            <p>
+                But since the 1800s, human activities have been the main cause of climate
+                change, primarily due to carbon emissions, deforestation, manufacturing,
+                and energy production. These activities increase greenhouse gases such as
+                carbon dioxide and methane.
+            </p>
+        </div>
     </div>
-    <!-- Home Section - General Overview -->
-    <section id="home">
-        
-        <div class="climate">
-            <div class="climate-text">
-                <h2>What is Climate Change?</h2>
-                <p>Climate change refers to long-term shifts in temperatures and weather patterns. Such shifts can be natural, due to changes in the sun's activity or large volcanic eruptions.</p>
-            </div>
-            <div class="climate-text2">
-                <img src="resources/climate-change.jpg" alt="climate change">
-                <p>But since the 1800s, human activities have been the main cause of climate change, primarily due to carbon emissions, cutting down forests, manufacturing goods, generating power etc. These activities increase the greenhouse gases in which it contributes to climate change. The main greenhouse gases that are causing climate change include carbon dioxide and methane.</p>
-            </div>
+
+    <!-- Causes -->
+    <div class="causes">
+        <div class="causes-text">
+            <h3>Causes of Climate Change</h3>
+            <p>
+                Fossil fuels – coal, oil, and gas – are the largest contributors to global
+                climate change, responsible for over 75% of greenhouse gas emissions.
+            </p>
+            <p>
+                Emissions trap heat in the atmosphere, leading to global warming. The
+                world is now warming faster than at any point in recorded history.
+            </p>
         </div>
 
-        <div class="causes">
-            <div class="causes-text">
-                <h3>Causes of Climate Change</h3>
-                <p>Fossil fuels – coal, oil and gas – are by far the largest contributor to global climate change, accounting for over 75% of global greenhouse gas emissions and nearly 90% of all carbon dioxide emissions.</p>
-                <p>As greenhouse gas emissions blanket the Earth, they trap the sun's heat. This leads to global warming and climate change. The world is now warming faster than at any point in recorded history. Warmer temperatures over time are changing weather patterns and disrupting the usual balance of nature. This poses many risks to human beings and all other forms of life on Earth.</p>
+        <div class="causes-cards">
+            <!-- Card: Power Generation -->
+            <div class="card">
+                <h4>Power Generation</h4>
+                <img src="resources/power_generation.jpg" alt="Power generation" />
+                <p>
+                    Burning fossil fuels for electricity and heat produces massive carbon
+                    emissions. Renewables like solar and wind emit little to no greenhouse
+                    gases.
+                </p>
             </div>
 
-            <div class="causes-cards">
-                <div class="card">
-                    <h4>Power Generation</h4>
-                    <img src="resources/power_generation.jpg" alt="Generation of power">
-                    <p>Generating electricity and heat by burning fossil fuels causes a large chunk of global emissions. Most electricity is still generated by burning coal, oil, or gas, which produces carbon dioxide and nitrous oxide – powerful greenhouse gases that blanket the Earth and trap the sun's heat. Globally, a bit more than a quarter of electricity comes from wind, solar and other renewable sources which, as opposed to fossil fuels, emit little to no greenhouse gases or pollutants into the air.</p>
-                </div>
+            <!-- Card: Manufacturing -->
+            <div class="card">
+                <h4>Manufacturing</h4>
+                <img src="resources/manufacturing.jpg" alt="Manufacturing industry" />
+                <p>
+                    Industries rely on fossil fuels for energy and release gases through
+                    mining and construction. Manufacturing is one of the biggest global
+                    emission sources.
+                </p>
+            </div>
 
-                <div class="card">
-                    <h4>Manufacturing</h4>
-                    <img src="resources/manufacturing.jpg" alt="Manufacturing">
-                    <p>Manufacturing and industry produce emissions, mostly from burning fossil fuels to produce energy for making things like cement, iron, steel, electronics, plastics, clothes, and other goods. Mining and other industrial processes also release gases, as does the construction industry. Machines used in the manufacturing process often run on coal, oil, or gas; and some materials, like plastics, are made from chemicals sourced from fossil fuels. The manufacturing industry is one of the largest contributors to greenhouse gas emissions worldwide.</p>
-                </div>
-                
-                <div class="card">  
-                    <h4>Deforestation</h4>
-                    <img src="resources/deforestation.jpg" alt="Deforestation">
-                    <p>Cutting down forests to create farms or pastures, or for other reasons, causes emissions, since trees, when they are cut, release the carbon they have been storing. Each year approximately 12 million hectares of forest are destroyed. Since forests absorb carbon dioxide, destroying them also limits nature's ability to keep emissions out of the atmosphere. Deforestation, together with agriculture and other land use changes, is responsible for roughly a quarter of global greenhouse gas emissions.</p>
-                </div>
-                
-                <div class="card">       
-                    <h4>Transportation</h4>
-                    <img src="resources/transportation.jpg" alt="Transportation">
-                    <p>Most cars, trucks, ships, and planes run on fossil fuels. That makes transportation a major contributor of greenhouse gases, especially carbon-dioxide emissions. Road vehicles account for the largest part, due to the combustion of petroleum-based products, like gasoline, in internal combustion engines. But emissions from ships and planes continue to grow. Transport accounts for nearly one quarter of global energy-related carbon-dioxide emissions. And trends point to a significant increase in energy use for transport over the coming years.</p>
-                </div>
+            <!-- Card: Deforestation -->
+            <div class="card">
+                <h4>Deforestation</h4>
+                <img src="resources/deforestation.jpg" alt="Deforestation" />
+                <p>
+                    Cutting down forests releases stored carbon. Around 12 million hectares
+                    of forest are destroyed annually, reducing Earth’s carbon absorption
+                    ability.
+                </p>
+            </div>
 
-                <div class="card">
-                    <h4>Food production</h4>
-                    <img src="resources/food-production.jpg" alt="Production of food">
-                    <p>Producing food causes emissions of carbon dioxide, methane, and other greenhouse gases in various ways, including through deforestation and clearing of land for agriculture and grazing, digestion by cows and sheep, the production and use of fertilizers and manure for growing crops, and the use of energy to run farm equipment or fishing boats, usually with fossil fuels. All this makes food production a major contributor to climate change. And greenhouse gas emissions also come from packaging and distributing food.</p>
-                </div>
+            <!-- Card: Transportation -->
+            <div class="card">
+                <h4>Transportation</h4>
+                <img src="resources/transportation.jpg" alt="Transportation" />
+                <p>
+                    Cars, trucks, ships, and planes burn fossil fuels, making transport a
+                    major source of carbon emissions.
+                </p>
+            </div>
 
-                <div class="card">
-                    <h4>Overconsumption</h4>
-                    <img src="resources/overconsumption.jpg" alt="Overconsumption">
-                    <p>Your home and use of power, how you move around, what you eat and how much you throw away all contribute to greenhouse gas emissions. So does the consumption of goods such as clothing, electronics, and plastics. A large chunk of global greenhouse gas emissions are linked to private households. Our lifestyles have a profound impact on our planet. The wealthiest bear the greatest responsibility: the richest 1 per cent of the global population combined account for more greenhouse gas emissions than the poorest 50 per cent.</p>
-                </div>
+            <!-- Card: Food Production -->
+            <div class="card">
+                <h4>Food Production</h4>
+                <img src="resources/food-production.jpg" alt="Food production" />
+                <p>
+                    Agriculture produces emissions from land clearing, livestock digestion,
+                    fertilizers, and packaging. Food systems are a big climate driver.
+                </p>
+            </div>
+
+            <!-- Card: Overconsumption -->
+            <div class="card">
+                <h4>Overconsumption</h4>
+                <img src="resources/overconsumption.jpg" alt="Overconsumption" />
+                <p>
+                    Household energy, transport, food choices, and consumer goods all add
+                    to greenhouse gas emissions. Wealthier populations leave the largest
+                    footprint.
+                </p>
             </div>
         </div>
+    </div>
+</section>
 
-        <h3>Effect of Climate change</h3>
-
-        <h4>Hotter temperatures</h4>
-        <p>As greenhouse gas concentrations rise, so does the global surface temperature. The last decade, 2011-2020, is the warmest on record. Since the 1980s, each decade has been warmer than the previous one. Nearly all land areas are seeing more hot days and heat waves. Higher temperatures increase heat-related illnesses and make working outdoors more difficult. Wildfires start more easily and spread more rapidly when conditions are hotter. Temperatures in the Arctic have warmed at least twice as fast as the global average.</p>
-
-        <h4>More severe storms</h4>
-        <p>Destructive storms have become more intense and more frequent in many regions. As temperatures rise, more moisture evaporates, which exacerbates extreme rainfall and flooding, causing more destructive storms. The frequency and extent of tropical storms is also affected by the warming ocean. Cyclones, hurricanes, and typhoons feed on warm waters at the ocean surface. Such storms often destroy homes and communities, causing deaths and huge economic losses.</p>
-
-        <h4>Increased drought</h4>
-        <p>Climate change is changing water availability, making it scarcer in more regions. Global warming exacerbates water shortages in already water-stressed regions and is leading to an increased risk of agricultural droughts affecting crops, and ecological droughts increasing the vulnerability of ecosystems. Droughts can also stir destructive sand and dust storms that can move billions of tons of sand across continents. Deserts are expanding, reducing land for growing food. Many people now face the threat of not having enough water on a regular basis.</p>
-
-        <h4>A warming, rising ocean</h4>
-        <p>The ocean soaks up most of the heat from global warming. The rate at which the ocean is warming strongly increased over the past two decades, across all depths of the ocean. As the ocean warms, its volume increases since water expands as it gets warmer. Melting ice sheets also cause sea levels to rise, threatening coastal and island communities. In addition, the ocean absorbs carbon dioxide, keeping it from the atmosphere. But more carbon dioxide makes the ocean more acidic, which endangers marine life and coral reefs.</p>
-
-        <h4>Loss of species</h4>
-        <p>Climate change poses risks to the survival of species on land and in the ocean. These risks increase as temperatures climb. Exacerbated by climate change, the world is losing species at a rate 1,000 times greater than at any other time in recorded human history. One million species are at risk of becoming extinct within the next few decades. Forest fires, extreme weather, and invasive pests and diseases are among many threats related to climate change. Some species will be able to relocate and survive, but others will not.</p>
-
-        <h4>Not enough food</h4>
-        <p>Changes in the climate and increases in extreme weather events are among the reasons behind a global rise in hunger and poor nutrition. Fisheries, crops, and livestock may be destroyed or become less productive. With the ocean becoming more acidic, marine resources that feed billions of people are at risk. Changes in snow and ice cover in many Arctic regions have disrupted food supplies from herding, hunting, and fishing. Heat stress can diminish water and grasslands for grazing, causing declining crop yields and affecting livestock.</p>
-
-        <h4>More health risks</h4>
-        <p>Climate change is the single biggest health threat facing humanity. Climate impacts are already harming health, through air pollution, disease, extreme weather events, forced displacement, pressures on mental health, and increased hunger and poor nutrition in places where people cannot grow or find sufficient food. Every year, environmental factors take the lives of around 13 million people. Changing weather patterns are expanding diseases, and extreme weather events increase deaths and make it difficult for health care systems to keep up.</p>
-
-        <h4>Poverty and displacement</h4>
-        <p>Climate change increases the factors that put and keep people in poverty. Floods may sweep away urban slums, destroying homes and livelihoods. Heat can make it difficult to work in outdoor jobs. Water scarcity may affect crops. Over the past decade (2010–2019), weather-related events displaced an estimated 23.1 million people on average each year, leaving many more vulnerable to poverty. Most refugees come from countries that are most vulnerable and least ready to adapt to the impacts of climate change.</p>
-    </section>
-
-    <!-- Statistics Section -->
-    <section id="statistics">
+<!-- Statistics Section -->
+<section id="statistics" class="section stats">
+    <div class="section-header">
         <h1>Statistics</h1>
-        
+        <p class="section-subtitle">Key facts and recent findings about our warming world</p>
+    </div>
+
+    <!-- Metric tiles -->
+    <div class="stat-grid" role="list">
+        <div class="stat-card" role="listitem" aria-label="Warming since late 1800s">
+            <div class="stat-value">+1.2°C</div>
+            <div class="stat-label">Above late 1800s</div>
+            <small class="stat-note">Global average surface temp</small>
+        </div>
+        <div class="stat-card" role="listitem" aria-label="Warmest year">
+            <div class="stat-value">2024</div>
+            <div class="stat-label">Warmest on record</div>
+            <small class="stat-note">Since 1850</small>
+        </div>
+        <div class="stat-card" role="listitem" aria-label="Human contribution">
+            <div class="stat-value">~100%</div>
+            <div class="stat-label">Human-caused warming</div>
+            <small class="stat-note">Last ~200 years</small>
+        </div>
+        <div class="stat-card" role="listitem" aria-label="Top emitters share">
+            <div class="stat-value">50%+</div>
+            <div class="stat-label">Emissions</div>
+            <small class="stat-note">From 6 largest emitters</small>
+        </div>
+    </div>
+
+    <!-- Rich text content with callouts -->
+    <article class="prose">
         <h2>Humans are responsible for global warming</h2>
         <p>Climate scientists have shown that humans are responsible for virtually all global heating over the last 200 years. Human activities like the ones mentioned above are causing greenhouse gases that are warming the world faster than at any time in at least the last two thousand years.</p>
+
+        <div class="callout callout-warm" role="note" aria-label="Key temperature stat">
+            <strong>Now:</strong> Earth’s surface is ~<b>1.2°C</b> warmer than the late 1800s; each of the last four decades has been warmer than any decade since 1850.
+        </div>
+
         <p>The average temperature of the Earth's surface is now about 1.2°C warmer than it was in the late 1800s (before the industrial revolution) and warmer than at any time in the last 100,000 years. The last decade (2011-2020) was the warmest on record, and each of the last four decades has been warmer than any previous decade since 1850.</p>
         <p>The consequences of climate change now include, among others, intense droughts, water scarcity, severe fires, rising sea levels, flooding, melting polar ice, catastrophic storms and declining biodiversity.</p>
 
         <h2>Global temperature in 2024</h2>
-        <p>According to the annual report from NOAA National Centers for Environmental Information, 2024 was the warmest year since global records began in 1850. The global average surface temperature was 2.32 Fahrenheit (1.29 degrees Celsius) above the 20th-century average (57.0 degrees Fahrenheit, or 13.9 degrees Celsius) and 2.63 degrees Fahrenheit (1.46 degrees Celsius) above the pre-industrial average (56.7 degrees Fahrenheit, or 13.7 degrees Celsius), which NOAA defines as the period from 1850-1900.</p>
+        <p>According to the annual report from NOAA National Centers for Environmental Information, 2024 was the warmest year since global records began in 1850. The global average surface temperature was 2.32 Fahrenheit (1.29°C) above the 20th-century average and 2.63°F (1.46°C) above the pre-industrial average (1850–1900).</p>
 
         <h2>People are experiencing climate change in diverse ways</h2>
-        <p>Climate change can affect our health, ability to grow food, housing, safety and work. Some of us are already more vulnerable to climate impacts, such as people living in small island nations and other developing countries. Conditions like sea-level rise and saltwater intrusion have advanced to the point where whole communities have had to relocate, and protracted droughts are putting people at risk of famine. In the future, the number of people displaced by weather-related events is expected to rise.</p>
+        <p>Climate change can affect our health, ability to grow food, housing, safety and work. Some of us are already more vulnerable to climate impacts, such as people living in small island nations and other developing countries...</p>
 
         <h2>Every increase in global warming matters</h2>
-        <p>In a series of UN reports, thousands of scientists and government reviewers agreed that limiting global temperature rise to no more than 1.5°C would help us avoid the worst climate impacts and maintain a livable climate. Yet policies currently in place point to up to 3.1°C of warming by the end of the century.</p>
-        <p>The emissions that cause climate change come from every part of the world and affect everyone, but some countries produce much more than others. The six biggest emitters (China, the United States of America, India, the European Union, the Russian Federation, and Brazil) together accounted for more than half of all global greenhouse gas emissions in 2023. By contrast, the 45 least developed countries accounted for only 3 per cent of global greenhouse gas emissions.</p>
-        <p>Everyone must take climate action, but people and countries creating more of the problem have a greater responsibility to act first.</p>
-    </section>
+        <p>Limiting warming to no more than 1.5°C would help us avoid the worst impacts. Yet current policies point to as much as 3.1°C by 2100. The six biggest emitters together account for over half of global emissions, while the 45 least developed countries produce only ~3%.</p>
 
-    <!-- News Section -->
-    <section id="news">
+        <div class="tag-row" aria-label="Responsibility tags">
+            <span class="tag">Mitigation</span>
+            <span class="tag">Adaptation</span>
+            <span class="tag">Equity</span>
+            <span class="tag">Finance</span>
+        </div>
+    </article>
+</section>
+
+<!-- News Section -->
+<section id="news" class="section section-alt">
+    <div class="section-header">
         <h1>News</h1>
-        <p>Latest climate change news and updates will be featured here. Stay tuned for current developments, scientific discoveries, and policy changes related to climate change.</p>
-    </section>
+        <p class="section-subtitle">Latest updates, discoveries, and policy changes</p>
+    </div>
 
-    <!-- Events Section -->
-    <section id="events">
+    <div class="card-grid">
+        <article class="card article-card">
+            <div class="card-body">
+                <h3 class="card-title">New climate policy framework</h3>
+                <p class="card-text">Latest climate change news and updates will be featured here. Stay tuned for current developments, scientific discoveries, and policy changes related to climate change.</p>
+                <div class="meta">
+                    <span class="pill">Policy</span>
+                    <time datetime="2025-01-15">Jan 15, 2025</time>
+                </div>
+            </div>
+        </article>
+
+        <article class="card article-card">
+            <div class="card-body">
+                <h3 class="card-title">Breakthrough in carbon capture</h3>
+                <p class="card-text">Placeholder for a recent research highlight or technology update related to emissions reduction.</p>
+                <div class="meta">
+                    <span class="pill">Science</span>
+                    <time datetime="2025-02-02">Feb 2, 2025</time>
+                </div>
+            </div>
+        </article>
+
+        <article class="card article-card">
+            <div class="card-body">
+                <h3 class="card-title">Renewables hit record share</h3>
+                <p class="card-text">A brief summary of a milestone for wind, solar, and storage adoption globally.</p>
+                <div class="meta">
+                    <span class="pill">Energy</span>
+                    <time datetime="2025-03-22">Mar 22, 2025</time>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Events Section -->
+<section id="events" class="section">
+    <div class="section-header">
         <h1>Events</h1>
-        <p>Information about climate change conferences, summits, awareness campaigns, and other relevant events will be displayed here.</p>
-    </section>
+        <p class="section-subtitle">Conferences, summits, and community actions</p>
+    </div>
 
-    <!-- Advocacy Groups Section -->
-    <section id="advocacy">
+    <ol class="timeline" aria-label="Upcoming events">
+        <li class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+                <h3>Climate Action Summit</h3>
+                <p>Information about climate change conferences, summits, awareness campaigns, and other relevant events will be displayed here.</p>
+                <div class="meta">
+                    <time datetime="2025-06-10">Jun 10, 2025</time>
+                    <span class="pill">Conference</span>
+                </div>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+                <h3>Community Reforestation Drive</h3>
+                <p>Local volunteer event focused on native species and watershed restoration.</p>
+                <div class="meta">
+                    <time datetime="2025-07-05">Jul 5, 2025</time>
+                    <span class="pill">Volunteer</span>
+                </div>
+            </div>
+        </li>
+    </ol>
+</section>
+
+<!-- Advocacy Groups Section -->
+<section id="advocacy" class="section section-alt">
+    <div class="section-header">
         <h1>Relevant Advocacy Groups</h1>
-        <p>Details about organizations and groups working on climate change initiatives, environmental protection, and sustainability will be featured here.</p>
-    </section>
+        <p class="section-subtitle">Organizations working on climate, conservation, and sustainability</p>
+    </div>
 
-    <!-- Opinions Section -->
-    <section id="opinions">
+    <div class="logo-grid" role="list">
+        <a class="logo-card" role="listitem" href="#" aria-label="Group A">
+            <div class="logo-placeholder">A</div>
+            <span>Group A</span>
+        </a>
+        <a class="logo-card" role="listitem" href="#" aria-label="Group B">
+            <div class="logo-placeholder">B</div>
+            <span>Group B</span>
+        </a>
+        <a class="logo-card" role="listitem" href="#" aria-label="Group C">
+            <div class="logo-placeholder">C</div>
+            <span>Group C</span>
+        </a>
+        <a class="logo-card" role="listitem" href="#" aria-label="Group D">
+            <div class="logo-placeholder">D</div>
+            <span>Group D</span>
+        </a>
+    </div>
+</section>
+
+<!-- Opinions Section -->
+<section id="opinions" class="section">
+    <div class="section-header">
         <h1>Opinions</h1>
-        <p>Expert opinions, analysis, and perspectives on climate change issues will be shared in this section.</p>
-    </section>
+        <p class="section-subtitle">Expert perspectives and analysis</p>
+    </div>
 
-    <!-- Trends and Innovations Section -->
-    <section id="trends">
+    <div class="quote-grid">
+        <figure class="quote-card">
+            <blockquote>“Decarbonization is not a single technology—it’s a system redesign challenge.”</blockquote>
+            <figcaption>— Climate Policy Researcher</figcaption>
+        </figure>
+        <figure class="quote-card">
+            <blockquote>“Adaptation funding must prioritize the most vulnerable communities first.”</blockquote>
+            <figcaption>— Development Economist</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- Trends and Innovations Section -->
+<section id="trends" class="section section-alt">
+    <div class="section-header">
         <h1>Trends and Innovations</h1>
-        
-        <h2>We face a huge challenge but already know many solutions</h2>
-        <p>Many climate change solutions can deliver economic benefits while improving our lives and protecting the environment. We also have global frameworks and agreements to guide progress, such as the Sustainable Development Goals, the UN Framework Convention on Climate Change and the Paris Agreement. Three broad categories of action are: cutting emissions, adapting to climate impacts and financing required adjustments.</p>
+        <p class="section-subtitle">What’s emerging—and what matters now</p>
+    </div>
 
-        <p>Switching energy systems from fossil fuels to renewables like solar or wind will reduce the emissions driving climate change. But we have to act now. While a growing number of countries is committing to net zero emissions by 2050, emissions must be cut in half by 2030 to keep warming below 1.5°C. Achieving this means huge declines in the use of coal, oil and gas: production and consumption of all fossil fuels need to be cut by at least 30 per cent by 2030 in order to prevent catastrophic levels of climate change.</p>
+    <!-- Accessible accordion using details/summary -->
+    <div class="accordion">
+        <details open>
+            <summary>We face a huge challenge but already know many solutions</summary>
+            <div class="accordion-body">
+                <p>Many climate change solutions can deliver economic benefits while improving our lives and protecting the environment. We also have global frameworks and agreements to guide progress, such as the Sustainable Development Goals, the UNFCCC and the Paris Agreement. Three broad categories of action are: cutting emissions, adapting to climate impacts and financing required adjustments.</p>
+            </div>
+        </details>
 
-        <p>Adapting to climate consequences protects people, homes, businesses, livelihoods, infrastructure and natural ecosystems. It covers current impacts and those likely in the future. Adaptation will be required everywhere, but must be prioritized now for the most vulnerable people with the fewest resources to cope with climate hazards. The rate of return can be high. Early warning systems for disasters, for instance, save lives and property, and can deliver benefits up to 10 times the initial cost.</p>
-    </section>
+        <details>
+            <summary>Cutting emissions (mitigation)</summary>
+            <div class="accordion-body">
+                <p>Switching energy systems from fossil fuels to renewables like solar or wind will reduce the emissions driving climate change. While many countries commit to net zero by 2050, emissions must be halved by 2030 to keep warming below 1.5°C. Production and consumption of fossil fuels should fall by at least 30% by 2030.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Adapting to climate impacts</summary>
+            <div class="accordion-body">
+                <p>Adaptation protects people, homes, businesses, and ecosystems. It should prioritize the most vulnerable. Early warning systems for disasters can return up to 10× benefits relative to cost.</p>
+            </div>
+        </details>
+    </div>
+</section>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+        <!-- Brand -->
+        <div class="footer-brand">
+            <div class="brand-row">
+                <span class="brand-dot" aria-hidden="true"></span>
+                <span class="brand-name">EcoAware</span>
+            </div>
+            <p class="brand-desc">
+                Raising awareness about climate change, pollution, and environmental solutions for a sustainable future.
+            </p>
+
+            <div class="social" aria-label="Social links">
+                <a href="#" aria-label="Twitter" class="social-link">
+                    <!-- x/twitter -->
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21.5l-7.5 8.57L22.5 22h-6.07l-4.75-5.77L5.3 22H2l8.06-9.2L1.8 2h6.2l4.29 5.26L18.24 2Zm-1.07 18h1.77L7.9 4h-1.9l10.16 16Z"/></svg>
+                </a>
+                <a href="#" aria-label="Instagram" class="social-link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5ZM18 6.25a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 18 6.25Z"/></svg>
+                </a>
+                <a href="#" aria-label="Pinterest" class="social-link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.33 2C7.64 2 5 5.02 5 8.39c0 1.62.87 3.64 2.27 4.28.21.1.32.05.37-.14l.26-1c.03-.1.02-.18-.07-.28-.45-.52-.8-1.48-.8-2.38 0-2.3 1.73-4.53 4.98-4.53 2.71 0 4.59 1.76 4.59 4.28 0 2.89-1.45 4.89-3.33 4.89-1.04 0-1.82-.86-1.57-1.92.3-1.27.89-2.65.89-3.57 0-.82-.44-1.51-1.35-1.51-1.07 0-1.93 1.11-1.93 2.6 0 .95.31 1.6.31 1.6l-1.24 5.24c-.37 1.59-.06 3.54-.03 3.73.02.06.08.08.12.03.05-.06.76-1.04 1.01-2.02l.68-2.62c.34 0 .68.05 1 .05 3.95 0 6.79-2.86 6.79-7.08C18.78 4.77 16.18 2 12.33 2Z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Cols -->
+        <nav class="footer-cols" aria-label="Footer navigation">
+            <div class="col">
+                <h4>Learn More</h4>
+                <ul>
+                    <li><a href="#">Climate Science</a></li>
+                    <li><a href="#">Pollution Data</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Take Action</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Research Papers</a></li>
+                    <li><a href="#">Educational Materials</a></li>
+                    <li><a href="#">Policy Guides</a></li>
+                    <li><a href="#">News &amp; Updates</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Organizations</h4>
+                <ul>
+                    <li><a href="#">IPCC</a></li>
+                    <li><a href="#">UN Environment</a></li>
+                    <li><a href="#">Climate Action</a></li>
+                    <li><a href="#">Local Groups</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <hr class="footer-divider" />
+
+    <div class="footer-bottom">
+        <div class="quote">
+            <img src="resources/footer.jpg" alt="" class="quote-avatar" />
+            <div class="quote-text">
+                <p>“The greatest threat to our planet is the belief that someone else will save it.”</p>
+                <small>— Robert Swan</small>
+            </div>
+        </div>
+
+        <div class="legal">
+            <p>© 2025 EcoAware. Made with <span class="heart" aria-label="love">💚</span> for our planet.</p>
+            <small>Together, we can make a difference.</small>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
