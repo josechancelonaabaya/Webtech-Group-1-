@@ -104,8 +104,14 @@ html {
   background: #e4ebff;
   padding: 6rem 2rem;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 4rem;
+}
+.climate-text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .climate h2 { color: #19378f; font-size: 2.3rem; margin-bottom: 1rem; }
 .climate-text p { color: #4f4f4f; font-size: 1.4rem; text-align: center; max-width: 800px; }
